@@ -25,7 +25,7 @@ This WooCommerce Wishlist Plugin allows users to create and manage their wishlis
 1. You can use the shortcode `[aws_wishlist_button]` to display ADD TO WISHLIST button inside query loop or single product page.
 2. Or alternatively you can create a custom tag i.e. `a`, `button`, with class `aws-wishlist--trigger` and an attribute `data-product-id` with the product id as a value. `i.e. <button class="aws-wishlist--trigger" data-product-id="2">add your desired html here</button>`
 3. For a built-in CSS, add `archive` class on button if it's an archive page or a query loop. and `single` class if it's a single product page. 
-4. To display the products added to the wishlist. Use the shortcode `[aws_wishlist]`.
+4. To display the products added to the wishlist. Use the shortcode `[aws_wishlist_table]`.
 
 
 ## Known Limitations
