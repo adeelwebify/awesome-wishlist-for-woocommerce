@@ -5,12 +5,13 @@
 * Plugin URI:        https://muhammadadeel.net/awesome-wishlist-plugin/
 * Version:           1.0
 * Requires at least: 6.0
-* Requires PHP:      8.0
+* Tested up to: 6.7.1
+* Requires PHP:      7.2
 * Author:            Muhammad Adeel
 * Author URI:        https://muhammadadeel.net/
 * License:           GPL v2 or later
 * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
-* Text Domain:       AWS_WOO_WISHLIST
+* Text Domain:       aws-wishlist
 * Domain Path:       /languages
 * Requires Plugins:  woocommerce
 */
@@ -73,7 +74,7 @@ if ( !defined( 'AWS_VERSION' ) ) {
 }
 
 if ( !defined( 'AWS_TEXT_DOMAIN' ) ) {
-  define( 'AWS_TEXT_DOMAIN' , 'AWS_WOO_WISHLIST' );
+  define( 'AWS_TEXT_DOMAIN' , 'aws-wishlist' );
 }
 
 
