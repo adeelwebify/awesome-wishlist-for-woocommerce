@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+
+# Ignore generated files
+assets/js/*.map
+assets/css/*.map
