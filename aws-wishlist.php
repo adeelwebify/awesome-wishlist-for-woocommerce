@@ -67,7 +67,8 @@ if ( !defined( 'AWS_PLUGIN_URL' ) ) {
 }
 
 if ( !defined( 'AWS_VERSION' ) ) {
-  $version = rand(1111, 9999);
+//  $version = rand(1111, 9999); // For development purpose
+  $version = '1.0';
   define( 'AWS_VERSION' , $version );
 }
 
