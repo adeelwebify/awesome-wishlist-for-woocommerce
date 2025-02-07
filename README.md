@@ -1,40 +1,69 @@
-# Awesome Wishlist For WooCommerce
+# Awesome Wishlist Form WooCommerce
 
-**Tags:** wishlist, woo-commerce, e-commerce  
-**Requires at least:** 5.0  
-**Tested up to:** 6.7.1  
-**Requires PHP:** 7.2  
-**Stable tag:** 1.0
-**License:** GPL-2.0-or-later  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
-
-## Plugin Description
-This WooCommerce Wishlist Plugin allows users to create and manage their wishlist. The plugin is designed with security, usability, and performance in mind, ensuring a smooth experience for both administrators and users.
+A lightweight and efficient wishlist plugin for WooCommerce. Allows logged-in users to add and manage their favorite products in a wishlist. The plugin is optimized for performance and works seamlessly with any WordPress theme or page builder.
 
 ## Features
-- Display a wishlist for logged-in users.
-- Render shared wishlists for public viewing.
-- Secure and scalable implementation.
-- Simple and clean design.
 
-## Upcoming in Next Releases
-- Shareable Wishlists
-- Allow administrators to control the content and look from backend.
+- Add/Remove products from the wishlist with AJAX.
+- Works with any WordPress stack.
+- Uses event delegation for better compatibility with pagination and dynamic content.
+- Wishlist is stored per user and requires login.
+- Shortcodes for easy integration:
+  - `[aws_wishlist_button]` – Displays the wishlist button on product pages.
+  - `[aws_wishlist_table]` – Displays the user's wishlist table.
+- Optimized and lightweight JavaScript implementation.
 
-## How To Use Awesome Wishlist Plugin
-1. You can use the shortcode `[aws_wishlist_button]` to display ADD TO WISHLIST button inside query loop or single product page.
-2. Or alternatively you can create a custom tag i.e. `a`, `button`, with class `aws-wishlist--trigger` and an attribute `data-product-id` with the product id as a value. `i.e. <button class="aws-wishlist--trigger" data-product-id="2">add your desired html here</button>`
-3. For a built-in CSS, add `archive` class on button if it's an archive page or a query loop. and `single` class if it's a single product page. 
-4. To display the products added to the wishlist. Use the shortcode `[aws_wishlist_table]`.
+## Installation
 
+1. Download or clone the repository.
+2. Upload the plugin folder to `/wp-content/plugins/`.
+3. Activate the plugin through the WordPress Admin Dashboard (`Plugins > Installed Plugins`).
+4. Use the shortcodes where needed.
 
-## Known Limitations
-- The plugin does not support guest users for wishlist creation or management.
-- Only WooCommerce products are supported in the wishlist.
+## Shortcodes
+
+### Wishlist Button
+```php
+[aws_wishlist_button]
+```
+Displays a wishlist button on the product page. Works on single products and archive pages.
+
+### Wishlist Table
+```php
+[aws_wishlist_table]
+```
+Displays the logged-in user's wishlist in a tabular format.
+
+## How It Works
+
+1. Users can click the **wishlist button** to add or remove a product.
+2. Wishlist data is stored in the user meta.
+3. The wishlist table shortcode dynamically pulls all wishlist items for the logged-in user.
+4. The plugin utilizes **AJAX** for seamless user experience.
+5. **Event delegation** ensures the wishlist buttons work even after pagination or AJAX-based content updates.
+
+## Compatibility
+
+- WordPress 6.0+
+- WooCommerce 6.0+
+- Works with any theme and page builder (Elementor, WPBakery, Gutenberg, GridBuilder, Bricks Builder, etc.)
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`feature-xyz` or `fix-abc`).
+3. Commit your changes with clear messages.
+4. Submit a pull request.
+
+## License
+
+This plugin is open-source and distributed under the **MIT License**.
+
+## Credits
+
+Developed by [Muhammad Adeel](https://github.com/adeelwebify).
 
 ## Support
-For support and feature requests, contact the plugin author via the WordPress plugin repository or email: [contact@muhammadAdeel.net](mailto:contact@muhammadadeel.net).
 
-## For Developers/Contributors
-The plugin is free use. You can modify the plugin for personal and commercial use. Contributors are always welcome.
+For issues or feature requests, open an issue in the GitHub repository. or contact via email [adeelwebify@gmail.com](mailto:adeelwebify@gmail.com)
 
